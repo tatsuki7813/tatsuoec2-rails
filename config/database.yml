@@ -51,5 +51,6 @@ test:
 production:
   <<: *default
   database: tatsuoec2_rails_production
-  username: tatsuoec2_rails
-  password: <%= ENV["TATSUOEC2_RAILS_DATABASE_PASSWORD"] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
